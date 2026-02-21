@@ -1,0 +1,10 @@
+// ---------------------------------------------------------------------------
+// Custom SCSS variables and functions (loaded after theme, before CSS).
+// Use this for: custom callout colors, new variables, etc.
+// Do NOT use for: overriding color-scheme variables (use _sass/color_schemes/*.scss)
+// or for raw CSS (use custom.scss instead).
+// ---------------------------------------------------------------------------
+
+// Example: custom callout color (then use in _config.yml callouts and {: .mycallout })
+// $mycolor-000: #e8f4f8;
+// $mycolor-300: #2c84fa;

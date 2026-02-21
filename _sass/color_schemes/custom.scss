@@ -1,0 +1,37 @@
+// Custom color scheme. Edit variables below to change colors and fonts.
+// Based on the dark scheme; use "color_schemes/light" for a light base.
+
+@import "color_schemes/dark";
+
+// ---------------------------------------------------------------------------
+// Typography (override theme defaults from _sass/support/_variables.scss)
+// ---------------------------------------------------------------------------
+$body-font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+  roboto, "Helvetica Neue", arial, sans-serif;
+$mono-font-family: "SFMono-Regular", menlo, consolas, monospace;
+
+// Optional: uncomment and set a custom font (e.g. add link in _includes/head_custom.html)
+// $body-font-family: "Your Font", system-ui, sans-serif;
+// $mono-font-family: "Your Mono Font", monospace;
+
+// ---------------------------------------------------------------------------
+// Sidebar: stricter fixed width (closer to a fixed sidebar like pentestpop)
+// Theme default: 16.5rem / 15.5rem
+// ---------------------------------------------------------------------------
+$nav-width: 14rem;
+$nav-width-md: 13rem;
+
+// ---------------------------------------------------------------------------
+// Colors: override any dark scheme variables. Examples:
+// ---------------------------------------------------------------------------
+// $body-background-color: $grey-dk-300;
+// $body-heading-color: $grey-lt-000;
+// $body-text-color: $grey-lt-300;
+// $link-color: lighten($blue-000, 10%);
+// $sidebar-color: $grey-dk-300;
+// $nav-child-link-color: $grey-dk-000;
+
+// Accent / link color examples (uncomment one or define your own hex):
+// $link-color: $blue-000;
+// $link-color: $green-000;
+// $link-color: #7ee8fa;

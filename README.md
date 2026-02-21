@@ -93,6 +93,25 @@ Just upload all the files in the directory `_site`.
 
 You're free to customize sites that you create with this template, however you like!
 
+### Colors, fonts, and sidebar (no cloning required)
+
+This repo overrides the theme with **only the files you need**; the rest comes from the `just-the-docs` gem. No need to copy the full theme.
+
+- **Colors and fonts**  
+  Edit `_sass/color_schemes/custom.scss`. The file is based on the dark scheme and overrides variables (e.g. `$link-color`, `$body-font-family`, `$mono-font-family`). For a light base instead, change the first import to `@import "color_schemes/light";`. All variables are documented in the theme’s [_variables.scss](https://github.com/just-the-docs/just-the-docs/blob/main/_sass/support/_variables.scss).
+
+- **Custom fonts (e.g. Google Fonts)**  
+  Add your `<link>` in `_includes/head_custom.html` (create the file if needed), then set `$body-font-family` or `$mono-font-family` in `_sass/color_schemes/custom.scss`.
+
+- **Sidebar**  
+  Sidebar width is set in `_sass/color_schemes/custom.scss` (`$nav-width`, `$nav-width-md`). Extra CSS (e.g. stricter fixed width) lives in `_sass/custom/custom.scss`.
+
+- **Other overrides**  
+  - `_sass/custom/setup.scss` – new SCSS variables (e.g. custom callout colors).  
+  - `_sass/custom/custom.scss` – any extra CSS.
+
+The active scheme is set in `_config.yml` as `color_scheme: custom`.
+
 [Browse our documentation][Just the Docs] to learn more about how to use this theme.
 
 ## Hosting your docs from an existing project repo

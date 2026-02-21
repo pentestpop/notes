@@ -1,0 +1,27 @@
+// ---------------------------------------------------------------------------
+// Custom CSS overrides (sidebar, layout, or any class overrides).
+// These apply on top of the theme; upstream theme changes still apply.
+// ---------------------------------------------------------------------------
+
+// Stricter sidebar: fixed width, no shrinking, consistent with pentestpop-style
+.side-bar {
+  width: $nav-width;
+  min-width: $nav-width;
+  max-width: $nav-width;
+}
+
+@media (min-width: 50rem) {
+  .side-bar {
+    width: $nav-width;
+    min-width: $nav-width;
+    max-width: $nav-width;
+  }
+}
+
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: $nav-width;
+    min-width: $nav-width;
+    max-width: $nav-width;
+  }
+}

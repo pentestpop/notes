@@ -1,0 +1,11 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+node_modules/
+Gemfile.lock
+just-the-docs/
+assets.bak/
+add_front_matter.py
+audit_assets.py

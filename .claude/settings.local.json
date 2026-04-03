@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /home/cgrigsby/Desktop/Full_Notes/Reconnaissance)",
+      "Bash(mkdir -p /home/cgrigsby/Desktop/Full_Notes/Service_Enumeration)",
+      "Bash(mkdir -p /home/cgrigsby/Desktop/Full_Notes/Active_Directory)",
+      "Bash(mkdir -p /home/cgrigsby/Desktop/Full_Notes/Web_Application)",
+      "Bash(mkdir -p /home/cgrigsby/Desktop/Full_Notes/Post_Exploitation)",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Post-Exploit/Port Forwarding, Mirroring.md\" \"/home/cgrigsby/Desktop/Full_Notes/Post_Exploitation/Port_Forwarding.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Post-Exploit/Steganography.md\" \"/home/cgrigsby/Desktop/Full_Notes/Post_Exploitation/Steganography.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Post-Exploit/File Transfers.md\" \"/home/cgrigsby/Desktop/Full_Notes/Post_Exploitation/File_Transfers.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Unsorted/Metasploit.md\" \"/home/cgrigsby/Desktop/Full_Notes/Reference/Metasploit.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Unsorted/LAPS.md\" \"/home/cgrigsby/Desktop/Full_Notes/Reference/LAPS.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Burp Suite Academy/Access Control.md\" \"/home/cgrigsby/Desktop/Full_Notes/Web_Application/Access_Control.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Burp Suite Academy/Business Logic Vulnerabilities.md\" \"/home/cgrigsby/Desktop/Full_Notes/Web_Application/Business_Logic.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Burp Suite Academy/Clickjacking.md\" \"/home/cgrigsby/Desktop/Full_Notes/Web_Application/Clickjacking.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Burp Suite Academy/CSRF - Cross-Site Request Forgery.md\" \"/home/cgrigsby/Desktop/Full_Notes/Web_Application/CSRF.md\")",
+      "Bash(cp \"/home/cgrigsby/Desktop/Full_Notes/Burp Suite Academy/File Upload Vulnerabilities.md\" \"/home/cgrigsby/Desktop/Full_Notes/Web_Application/File_Upload_Vulnerabilities.md\")",
+      "Bash(find . -name \"*.md\" -type f -exec grep -l '\\\\$\\\\$' {} \\\\;)",
+      "Bash(find /home/cgrigsby/Desktop/Full_Notes -name \"*.md\" -type f -exec grep -Hn '\\\\.\\\\command\\\\|\\\\\\\\command' {} \\\\;)",
+      "Bash(grep -rn '`[^`]*$' /home/cgrigsby/Desktop/Full_Notes --include=\"*.md\")",
+      "Bash(ls -1 /home/cgrigsby/Desktop/Docs/Reconnaissance/*.md)",
+      "Bash(ls -1 /home/cgrigsby/Desktop/Docs/Reference/*.md)",
+      "Bash(ls -1 /home/cgrigsby/Desktop/Docs/Post_Exploitation/*.md)",
+      "Bash(ls -1 /home/cgrigsby/Desktop/Docs/*.md)",
+      "Bash(python3 add_front_matter.py)",
+      "Bash(python3 audit_assets.py)",
+      "Bash(ruby --version)",
+      "Bash(gem --version)",
+      "Bash(bundle --version)",
+      "Bash(bundle config:*)",
+      "Bash(bundle install:*)",
+      "Bash(bundle exec:*)",
+      "Bash(ln -s Images images)"
+    ]
+  }
+}

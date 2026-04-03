@@ -9,3 +9,4 @@ just-the-docs/
 assets.bak/
 add_front_matter.py
 audit_assets.py
+.claude/

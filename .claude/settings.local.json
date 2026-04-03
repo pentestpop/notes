@@ -31,7 +31,8 @@
       "Bash(bundle config:*)",
       "Bash(bundle install:*)",
       "Bash(bundle exec:*)",
-      "Bash(ln -s Images images)"
+      "Bash(ln -s Images images)",
+      "Bash(xargs sed:*)"
     ]
   }
 }

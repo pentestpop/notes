@@ -1,0 +1,91 @@
+title: Security Notes
+description: Personal penetration testing and security research notes
+baseurl: ""
+url: "https://notes.chrisgrigsby.com"  # Set to your subdomain URL, e.g. https://notes.chrisgrigsby.com
+
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: security
+
+permalink: pretty
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 8
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+  focus_shortcut_key: "k"
+
+enable_copy_code_button: true
+
+heading_anchors: true
+
+aux_links:
+  "← chrisgrigsby.com":
+    - "https://chrisgrigsby.com"
+aux_links_new_tab: false
+
+nav_enabled: true
+nav_sort: case_insensitive
+
+nav_external_links:
+  - title: chrisgrigsby.com
+    url: https://chrisgrigsby.com
+    hide_icon: false
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: 'Security Notes &mdash; <a href="https://chrisgrigsby.com">chrisgrigsby.com</a>'
+
+callouts_level: quiet
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
+  tip:
+    title: Tip
+    color: green
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+exclude:
+  - just-the-docs/
+  - add_front_matter.py
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - "*.gemspec"
+  - "*.gem"
+  - README.md
+  - LICENSE*
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+sass:
+  quiet_deps: true
+  silence_deprecations: ['import']

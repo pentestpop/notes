@@ -1,0 +1,97 @@
+// =========================================================
+// Security Notes — Custom overrides for the blue sidebar
+// =========================================================
+
+// --- Sidebar: site title ---
+.site-title {
+  color: rgba(255, 255, 255, 0.95) !important;
+
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+// --- Sidebar: top-level nav links ---
+.nav-list > .nav-list-item > .nav-list-link {
+  color: rgba(255, 255, 255, 0.88);
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &.active {
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+// --- Sidebar: top-level expander arrows ---
+.nav-list > .nav-list-item > .nav-list-expander {
+  color: rgba(255, 255, 255, 0.65);
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+// --- Sidebar: external nav links (chrisgrigsby.com) ---
+.nav-list .nav-list-item .nav-list-link.external {
+  color: rgba(255, 255, 255, 0.78);
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+// --- Search input on sidebar ---
+.search input {
+  color: #010a21;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.4);
+
+  &::placeholder {
+    color: rgba(1, 10, 33, 0.5);
+  }
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+// --- Aux link in header ---
+.aux-nav-list-item a {
+  color: #007a8e;
+
+  &:hover {
+    color: #c76b98;
+  }
+}
+
+// --- Content headings: accent color for h2 ---
+.main-content h2 {
+  border-bottom: 2px solid #c76b98;
+  padding-bottom: 0.2em;
+}
+
+// --- Active nav item accent ---
+.nav-list .nav-list-item .nav-list-link.active {
+  background-image: linear-gradient(
+    -90deg,
+    rgba(darken(#5167c4, 8%), 1) 0%,
+    rgba(darken(#5167c4, 8%), 0.8) 80%,
+    rgba(darken(#5167c4, 8%), 0) 100%
+  );
+}
+
+// --- Code block styling ---
+.highlight,
+pre.highlight {
+  border-left: 3px solid #008da3;
+  border-radius: 0 4px 4px 0;
+}
+
+// --- Inline code ---
+code.language-plaintext {
+  color: #b5618c;
+  background-color: #e0d3c2;
+}

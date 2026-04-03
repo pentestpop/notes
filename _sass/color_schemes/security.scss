@@ -1,0 +1,29 @@
+$color-scheme: security;
+
+// Backgrounds
+$body-background-color: #e4d8c9;
+$code-background-color: #d5c9b8;
+$table-background-color: #ddd0be;
+$search-background-color: #ddd0be;
+
+// Text
+$body-heading-color: #010a21;
+$body-text-color: #1a1f3a;
+
+// Links & accents (teal for content area links)
+$link-color: #007a8e;
+
+// Sidebar
+$sidebar-color: #5167c4;
+$nav-child-link-color: rgba(255, 255, 255, 0.78);
+$feedback-color: darken(#5167c4, 6%);
+
+// Buttons
+$base-button-color: #d4c8b7;
+$btn-primary-color: #b5618c;
+
+// Borders & misc
+$border-color: #c4b5a3;
+$search-result-preview-color: #3a3a52;
+
+@import "./vendor/accessible-pygments/github-light";

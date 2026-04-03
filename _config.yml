@@ -1,7 +1,7 @@
 title: Security Notes
 description: Personal penetration testing and security research notes
 baseurl: ""
-url: "https://notes.chrisgrigsby.com"  # Set to your subdomain URL, e.g. https://notes.chrisgrigsby.com
+url: "https://notes.chrisgrigsby.com"
 
 remote_theme: just-the-docs/just-the-docs
 
@@ -63,6 +63,7 @@ plugins:
 exclude:
   - just-the-docs/
   - add_front_matter.py
+  - audit_assets.py
   - .sass-cache/
   - .jekyll-cache/
   - Gemfile

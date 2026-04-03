@@ -25,25 +25,25 @@ Statistics:
 
 Display filter syntax:
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.02.30%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.02.30%20PM.png)
 
 
 Logical expressions: 
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.02.49%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.02.49%20PM.png)
 
 IP Filters:
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.03.52%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.03.52%20PM.png)
 
 TCP and UDP Filters:
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.06.26%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.06.26%20PM.png)
 
 
 Application Level Protocol Filters | HTTP and DNS
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.06.36%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%203.06.36%20PM.png)
 
 Use the  "**Analyse --> Display Filter Expression**" when you can't remember
 
@@ -75,5 +75,5 @@ Save queries to different profiles such as one for CTFs and one for Network Trou
 ## Traffic Analysis
 Nmap Scans
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%205.02.09%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-30%20at%205.02.09%20PM.png)
 

@@ -9,7 +9,7 @@ nav_order: 11
 TShark is a text-based tool, and it is suitable for data carving, in-depth packet analysis, and automation with scripts.
 
 ## Basic Tools
-![](assets/Images/TShark/Screenshot%202025-01-04%20at%2012.56.42%20PM.png)
+![](/assets/Images/TShark/Screenshot%202025-01-04%20at%2012.56.42%20PM.png)
 
 ## Main Parameters
 

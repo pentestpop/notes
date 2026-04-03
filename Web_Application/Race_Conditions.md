@@ -105,13 +105,13 @@ If you can identify *one or more HTTP requests that cause an interaction with **
 - Ex: Flawed multi-factor authentication (MFA) workflows that let you perform the first part of the login using known credentials, then navigate straight to the application via forced browsing, effectively bypassing MFA entirely.
 - I think I watched Kevin and Paul do this 
 
-![](assets/Images/Race%20Conditions/Predict_probe_prove.png)
+![](/assets/Images/Race%20Conditions/Predict_probe_prove.png)
 - Check "Smashing the state machine: The true potential of web race conditions by PortSwigger Research"
 
 1. **Predict**
 	1. Is it worth testing (valuable)
 	2. Are there collisions? Two or more requests have to trigger operations on the same record
-![](assets/Images/Race%20Conditions/same_record.png)
+![](/assets/Images/Race%20Conditions/same_record.png)
 2. **Probe**
 	1. Benchmark how the application works under normal conditions
 		1. Group requests and `Send group in sequence (separate connection)`
@@ -153,7 +153,7 @@ Essentially this required me to:
 I needed to have the gift card in the cart before checking out so that it didn't say the cart was empty before adding the jacket. Also it took a few tries. 
 
 ## Abusing Rate or Resource Limits
-![](assets/Images/Race%20Conditions/rate_or_resource_limits.png)
+![](/assets/Images/Race%20Conditions/rate_or_resource_limits.png)
 
 
 ## Single-endpoint race conditions

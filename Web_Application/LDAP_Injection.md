@@ -6,7 +6,7 @@ nav_order: 19
 ---
 
 
-![](assets/Images/LDAP%20Injection/ldapinjection1.png)
+![](/assets/Images/LDAP%20Injection/ldapinjection1.png)
 
 An LDAP search query consists of several components, each serving a specific function in the search operation:
 

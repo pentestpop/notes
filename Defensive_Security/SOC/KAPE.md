@@ -12,20 +12,20 @@ Kroll Artifact Parser and Extractor (KAPE) parses and extracts Windows forensics
 
 The collection of files (targets) KAPE adds the files to a queue and copies them in two passes. In the first pass, it copies the files that it can. This works for files that the OS has not locked. The rest of the files are passed to a secondary queue. The secondary queue is processed using a different technique that uses raw disk reads to bypass the OS locks and copy the files. The copied files are saved with original timestamps and metadata and stored in a similar directory structure.
 
-![](assets/Images/KAPE/Screenshot%202025-02-01%20at%205.30.13%20PM.png)
+![](/assets/Images/KAPE/Screenshot%202025-02-01%20at%205.30.13%20PM.png)
 
 
 `Targets` are the artifacts that need to be collected from a system or image and copied to our provided destination. For example, Windows Prefetch is a forensic artifact for evidence of execution so that we can create a `Target` for it. Similarly, we can also create `Targets` for the registry hives. In short, `Targets` copy files from one place to another.
 
 
 `Target` is defined for KAPE with a `TKAPE` file which contains information about the artifact that we want to collect, such as the path, category, and file masks to collect. As an example, below is how the Prefetch `Target` is defined.
-![](assets/Images/KAPE/Screenshot%202025-02-01%20at%205.33.01%20PM.png)
+![](/assets/Images/KAPE/Screenshot%202025-02-01%20at%205.33.01%20PM.png)
 
 ^ This TKAPE file tells KAPE to collect files with the file mask `*.pf` from the path `C:\Windows\prefetch` and `C:\Windows.old\prefetch`.
 
 
 **Compound Targets** - KAPE also supports `Compound Targets`. These are `Targets` that are compounds of multiple other targets. As mentioned in the previous tasks, KAPE is often used for quick triage collection and analysis. The purpose of KAPE will not be fulfilled if we have to collect each artifact individually. Therefore, `Compound Targets` help us collect multiple targets by giving a single command. Examples of `Compound Targets` include `!BasicCollection`, `!SANS_triage` and `KAPEtriage`. We can view the `Compound Targets` on the path `KAPE\Targets\Compound`. The following image shows what a `Compound Target` for evidence of execution looks like:
-![](assets/Images/KAPE/Screenshot%202025-02-01%20at%205.34.45%20PM.png)
+![](/assets/Images/KAPE/Screenshot%202025-02-01%20at%205.34.45%20PM.png)
 
 ^ The above `Compound Target` will collect evidence of execution from Prefetch, RecentFileCache, AmCache, and Syscache `Targets`.
 
@@ -41,7 +41,7 @@ The `bin` directory contains executables that we want to run on the system but a
 
 *This is important because each of the `.mkape` files contains information that includes an executable and what we want it to do. So we may need additional executables that are not present on the system.*
 
-![](assets/Images/KAPE/Screenshot%202025-02-03%20at%205.30.34%20PM.png)
+![](/assets/Images/KAPE/Screenshot%202025-02-03%20at%205.30.34%20PM.png)
 
 ## KAPE GUI
 

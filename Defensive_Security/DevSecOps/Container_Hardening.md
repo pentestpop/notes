@@ -43,7 +43,7 @@ Privileged containers are containers that have unchecked access to the host. Whe
 
 **Capabilities** are a security feature of Linux that determines what processes can and cannot do on a granular level. This separates privileges from being all-or-nothing like giving root access or not. Ex:
 
-![](assets/Images/Container%20Hardening/Screenshot%202024-12-10%20at%2012.37.19%20AM.png)
+![](/assets/Images/Container%20Hardening/Screenshot%202024-12-10%20at%2012.37.19%20AM.png)
 
 **It's recommended assigning capabilities to containers individually rather than running containers with the `--privileged` flag (which will assign all capabilities).**
 
@@ -130,10 +130,10 @@ NIST SP 800-190 is a framework that outlines the potential security concerns ass
 
 Benchmarking is a process used to see how well an organisation is adhering to best practices. Benchmarking allows an organisation to see where they are following best practices well and where further improvements are needed. 
 
-![](assets/Images/Container%20Hardening/Screenshot%202024-12-10%20at%2012.48.56%20AM.png)
+![](/assets/Images/Container%20Hardening/Screenshot%202024-12-10%20at%2012.48.56%20AM.png)
 
 
 Grype can be used to analyze Docker images and container filesystems. Consider the cheat sheet below:
 
-![](assets/Images/Container%20Hardening/Screenshot%202024-12-10%20at%2012.50.44%20AM.png)
+![](/assets/Images/Container%20Hardening/Screenshot%202024-12-10%20at%2012.50.44%20AM.png)
 

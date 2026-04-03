@@ -199,7 +199,7 @@ Payload:
 
 ### Lab: Exploiting XInclude to retrieve files
 
-![](assets/Images/XXE/xinclude.png)
+![](/assets/Images/XXE/xinclude.png)
 
 Also from [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXE%20Injection/README.md#exploiting-error-based-xxe)
 - The XInclude statement is inside the productId

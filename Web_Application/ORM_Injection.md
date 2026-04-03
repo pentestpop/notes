@@ -26,11 +26,11 @@ SQL injection and ORM injection are both techniques used to exploit vulnerabilit
   
  `$userRepository->findBy(['username' => "admin' OR '1'='1"]);`
 
-![](assets/Images/ORM%20Injection/ORMinjection1.png)
+![](/assets/Images/ORM%20Injection/ORMinjection1.png)
 
 
 CRUD Operations set up differently based on the Framework in use. 
-![](assets/Images/ORM%20Injection/Screenshot%202024-11-26%20at%208.45.11%20PM.png)
+![](/assets/Images/ORM%20Injection/Screenshot%202024-11-26%20at%208.45.11%20PM.png)
 
 
 For example, Laravel uses the `.env` file to store environment variables such as database credentials. 
@@ -47,6 +47,6 @@ Techniques for Testing ORM Injection:
 	- Also HTTP headers
 	- URL structure. 
 
-![](assets/Images/ORM%20Injection/Screenshot%202024-11-26%20at%208.45.11%20PM.png)
+![](/assets/Images/ORM%20Injection/Screenshot%202024-11-26%20at%208.45.11%20PM.png)
 
 Check with similar techniques to SQL Injection such as `'`'s. Essentially ORM is used to help abstract SQL queries, making them more secure from SQLi, so for any exploitation to work it needs to be misconfigured or under-configured. 

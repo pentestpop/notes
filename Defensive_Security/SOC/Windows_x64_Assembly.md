@@ -82,7 +82,7 @@ Let's talk about **General Purpose Registers (GPR)**. You can think of these as 
 8.  RBP - The **base pointer**. Holds the address of the base (bottom) of the stack.
 
 Each register can be broken down into smaller segments which can be referenced with other register names. RAX is 64 bits, the lower 32 bits can be referenced with EAX, and the lower 16 bits can be referenced with AX. AX is broken down into two 8 bit portions. The high/upper 8 bits of AX can be referenced with AH. The lower 8 bits can be referenced with AL.
-![](assets/Images/Windows%20x64%20Assembly/Screenshot%202025-02-08%20at%203.18.36%20PM.png)
+![](/assets/Images/Windows%20x64%20Assembly/Screenshot%202025-02-08%20at%203.18.36%20PM.png)
 
 What is the difference between the "E" and "R" prefixes? Besides one being a 64-bit register and the other 32 bits, the **"E" stands for extended**. The **"R" stands for register**. The "R" registers were newly introduced in x64, and no, you won't see them on 32-bit systems.
 

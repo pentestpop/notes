@@ -73,7 +73,7 @@ This removed the last section of the JWT, though it did still end in a `.`
 From instructions: *lab uses a JWT-based mechanism for handling sessions. The server supports the `jwk` parameter in the JWT header. This is sometimes used to embed the correct verification key directly in the token. However, it fails to check whether the provided key came from a trusted source.*
 - This means we can use the JWT editor extensions to fiddle with it and change to the `administrator` user
 
-![](assets/Images/JWT%20-%20JSON%20Web%20Tokens/jwk_header_injection.png)
+![](/assets/Images/JWT%20-%20JSON%20Web%20Tokens/jwk_header_injection.png)
 
 - I generated a key from the JWT Editor Extension page then use that to `Sign` from this repeater tab, then copied and pasted it into the request. These were the steps that needed to be followed:
 1. Go to the **JWT Editor Keys** tab in Burp's main tab bar.

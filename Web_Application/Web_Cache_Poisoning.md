@@ -32,28 +32,28 @@ Generally the web server uses "**cache keys**" to compare queries and determine 
 - **Unkeyed** = not included in the cache key
 
 Problem - when something crucial is outside the cache key (such as `language` header):
-![](assets/Images/Web%20Cache%20Poisoning/langauge_cache.png)
+![](/assets/Images/Web%20Cache%20Poisoning/langauge_cache.png)
 
 
 Methodology:
-![](assets/Images/Web%20Cache%20Poisoning/cache_poisoning_methodology.png)
+![](/assets/Images/Web%20Cache%20Poisoning/cache_poisoning_methodology.png)
 
 Things to note:
 - ==You need your request to be the first to hit the server after the cache expires==
 - `Vary: User-Agent` header means that the cache should add the user agent to the cache key (with `Host` and request line)
 - Sometimes there can be unexpected behavior when sending two different unexpected headers (`X-Forwarded-Host` and `X-Forwarded-Scheme`) even when individually they do nothing weird. 
-![](assets/Images/Web%20Cache%20Poisoning/chaining_unkeyed_inputs.png)
+![](/assets/Images/Web%20Cache%20Poisoning/chaining_unkeyed_inputs.png)
 - **Caution:** On a live website, there is a risk of inadvertently causing the cache to serve your generated responses to real users. *Include a unique cache key so that they will only be served to you.* To do this, you can manually add a **cache buster** (such as a unique parameter, like `/cb?=123`) to the request line each time you make a request.
 
 # Exploiting Cache Design Flaws
 websites are vulnerable to web cache poisoning if they handle unkeyed input in an unsafe way and allow the subsequent HTTP responses to be cached
 
 ## Using web cache poisoning to deliver an XSS attack
-![](assets/Images/Web%20Cache%20Poisoning/simple_X-Forwarded-Host_web_cache_poisoning.png)
+![](/assets/Images/Web%20Cache%20Poisoning/simple_X-Forwarded-Host_web_cache_poisoning.png)
 
 ### Lab: Web cache poisoning with an unkeyed header
 
-![](assets/Images/Web%20Cache%20Poisoning/tracking_js_file.png)
+![](/assets/Images/Web%20Cache%20Poisoning/tracking_js_file.png)
 - Note that when you put `example.com` for the `X-Forwarded-Host`, it says the `src="//example.com/resources/js/tracking.js`
 - Also note that the response says `X-Cache: miss` the first time, but subsequent requests show `hit`. 
 	- It also has an `Age` header that counts up to 30
@@ -62,7 +62,7 @@ websites are vulnerable to web cache poisoning if they handle unkeyed input in a
 
 
 ### Lab: Web cache poisoning with an unkeyed cookie
-![](assets/Images/Web%20Cache%20Poisoning/unkeyed_cookies_initial_request.png)
+![](/assets/Images/Web%20Cache%20Poisoning/unkeyed_cookies_initial_request.png)
 Steps: 
 1. Find a cache Oracle - note that `/` is bc it has `X-Cache` header (`hit` or `miss`), and `Age` headers. 
 	1. Must be cacheable and must be some way to tell if you got a hit or miss
@@ -87,17 +87,17 @@ Steps:
 
 ## Using multiple headers to exploit web cache poisoning vulnerabilities
 Sometimes there can be unexpected behavior when sending two different unexpected headers (`X-Forwarded-Host` and `X-Forwarded-Scheme`) even when individually they do nothing weird. 
-![](assets/Images/Web%20Cache%20Poisoning/chaining_unkeyed_inputs.png)
+![](/assets/Images/Web%20Cache%20Poisoning/chaining_unkeyed_inputs.png)
 *I initially saw this in the James Kettle Black Hat talk*
 ### Lab: Web cache poisoning with multiple headers
-![](assets/Images/Web%20Cache%20Poisoning/x-forwarded-scheme--302.png)
+![](/assets/Images/Web%20Cache%20Poisoning/x-forwarded-scheme--302.png)
 *Youtube finds these headers with Param Miner*
 
 - Backend sends a 302 redirect anytime it finds that the `X-Forwarded-Scheme` is set to anything other than `https` 
 	- ==we want to change it to an offsite redirect from an onsite==
 		- This is why we add the `X-Forwarded-Host`
 
-![](assets/Images/Web%20Cache%20Poisoning/webcachepoisoning_multiple_headers_solutions.png)
+![](/assets/Images/Web%20Cache%20Poisoning/webcachepoisoning_multiple_headers_solutions.png)
 - **Note**: we have changed the `X-Forwarded-Scheme` to something besides https, and we have added the `X-Forwarded-For` header to include our exploit server. ==Note also that the request line must be changed for the js file we need==
 
 
@@ -118,7 +118,7 @@ Sometimes there can be unexpected behavior when sending two different unexpected
 	2. Ex: `<img src="https://<exploit server>.net/resources/js/tracking.js" />`
 	3. It's `Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36`
 7. So then we make sure that exactly is cached, and we're done:
-![697](assets/Images/Web%20Cache%20Poisoning/unknown_header_w_user-agent.png)
+![697](/assets/Images/Web%20Cache%20Poisoning/unknown_header_w_user-agent.png)
 
 
 # Exploiting Cache Implementation Flaws
@@ -127,18 +127,18 @@ More here at [Web Cache Entanglement](https://portswigger.net/research/web-cache
 Worth noting that the last parameter in a query is the one prioritized
 
 ## Unkeyed Port 
-![](assets/Images/Web%20Cache%20Poisoning/unkeyed_port.png)
+![](/assets/Images/Web%20Cache%20Poisoning/unkeyed_port.png)
 - When we put a port in the request, it is not included in the cache key
 
 ## Unkeyed query
-![](assets/Images/Web%20Cache%20Poisoning/unkeyed_query.png)
+![](/assets/Images/Web%20Cache%20Poisoning/unkeyed_query.png)
 - Note the entire query string is not included, only the endpoint
 - 
 - Detection - put a bunch of cache busters in different headers
 
 
 
-![](assets/Images/Web%20Cache%20Poisoning/unkeyed_query_effect.png)
+![](/assets/Images/Web%20Cache%20Poisoning/unkeyed_query_effect.png)
 
 ### Lab: Web cache poisoning via an unkeyed query string
 - Find a potential cache oracle
@@ -169,7 +169,7 @@ Host: 0a30002f03fac9b587d1470300310004.web-security-academy.net
 
 ## Cache parameter cloaking
 
-![](assets/Images/Web%20Cache%20Poisoning/cache_parameter_cloaking.png)
+![](/assets/Images/Web%20Cache%20Poisoning/cache_parameter_cloaking.png)
 
 If you can work out how the cache parses the URL to identify and remove the unwanted parameters, you might find some interesting quirks. *Of particular interest are any parsing discrepancies between the cache and the application*. This can potentially allow you to sneak arbitrary parameters into the application logic by "cloaking" them in an excluded parameter.
 
@@ -219,7 +219,7 @@ report=innocent-victim
 Not just Varnish, all **Cloudflare** systems do the same, as does the `**Rack::Cache**` module
 
 ### Gadgets
-![](assets/Images/Web%20Cache%20Poisoning/gadgets%201.png)
+![](/assets/Images/Web%20Cache%20Poisoning/gadgets%201.png)
 - If the page importing a CSS file doesn't have a `doctype`, the file doesn't even need to have a text/css content-type; browsers will simply walk through the document until they encounter valid CSS, then execute it. This means you may occasionally find you're able to poison static CSS files by triggering a server error that reflects the URL:
 ```HTTP 
 GET /foo.css?x=alert(1)%0A{}*{color:red;} HTTP/1.1
@@ -250,11 +250,11 @@ arbitraryFunction({"country" : "United Kingdom"})
 - set `callback` in the body as `alert(1)`
 
 The difference in responses=
-![](assets/Images/Web%20Cache%20Poisoning/setCountryCookie.png)
+![](/assets/Images/Web%20Cache%20Poisoning/setCountryCookie.png)
 
 vs. 
 
-![](assets/Images/Web%20Cache%20Poisoning/callback_alert.png)
+![](/assets/Images/Web%20Cache%20Poisoning/callback_alert.png)
 
 
 ## Cache key normalization
@@ -292,4 +292,4 @@ PHP: /index.php/xyz
 
 ## Unkeyed Method
 -
-![](assets/Images/Web%20Cache%20Poisoning/uneyed_method.png)
+![](/assets/Images/Web%20Cache%20Poisoning/uneyed_method.png)

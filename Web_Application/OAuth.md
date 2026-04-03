@@ -94,7 +94,7 @@ More **redirect_uri** info:
 The key is is the `redirect_uri` parameter being sent with the `GET /auth` request. **Duh.**
 - You can set it to anything and it won't throw an error
 - Set it to the [exploit server](https://exploit-0a47004d04a05a3681411ffb019f0033.exploit-server.net/exploit)
-![](assets/Images/OAuth%20authentication/OAuth_redirect_uri.png)
+![](/assets/Images/OAuth%20authentication/OAuth_redirect_uri.png)
 - For whatever reason, the code did not show up in my log, and then all the requests did at once
 	- Maybe this was because I failed to "Follow Redirection" in Burp (**Actually definitely**) so I sent a bunch of new code generation requests, and the requests did show up in the log, but only when I actually followed the redirection did the codes themselves show up
 

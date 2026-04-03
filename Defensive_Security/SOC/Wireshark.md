@@ -8,7 +8,7 @@ nav_order: 16
 
 Nmap Scans:
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%202.19.39%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%202.19.39%20PM.png)
 
 ## Types of Scans
 There are a few. 
@@ -50,35 +50,35 @@ The given filter shows the UDP scan patterns in a capture file:
 - It doesn't have an authentication function
 - Common patterns are request & response, announcement and gratuitous packets.
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%203.11.37%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%203.11.37%20PM.png)
 
 Analysis
-![](assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%203.13.15%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%203.13.15%20PM.png)
 
 
 
 ## DHCP Analysis
 
-![](assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%204.28.58%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%204.28.58%20PM.png)
 
 ## NetBIOS (NBNS) Analysis
-![](assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%204.32.38%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%204.32.38%20PM.png)
 
 
 ## Kerberos
-![](assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%204.33.27%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202024-12-31%20at%204.33.27%20PM.png)
 
 ## FTP
-![](assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.19.59%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.19.59%20PM.png)
 
 
 ## HTTP
-![](assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.51.05%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.51.05%20PM.png)
 
 ### User Agent
-![](assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.51.22%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.51.22%20PM.png)
 
 ## HTTPS
 Decrypting HTTPS Traffic
 
-![](assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.51.40%20PM.png)
+![](/assets/Images/Wireshark%202/Screenshot%202025-01-02%20at%203.51.40%20PM.png)

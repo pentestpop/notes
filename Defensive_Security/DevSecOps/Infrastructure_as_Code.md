@@ -47,11 +47,11 @@ Provisioning tools: Terraform, AWS CloudFormation, Google Cloud Deployment Manag
 
 Configuration management tools: Ansible, Chef, Puppet, Saltstack
 
-![](assets/Images/Infrastructure%20as%20Code/63d2d4fc39187ca84cc6f9dc15197b01.png)
+![](/assets/Images/Infrastructure%20as%20Code/63d2d4fc39187ca84cc6f9dc15197b01.png)
 
 
 ### IACLC
-![](assets/Images/Infrastructure%20as%20Code/248f6eebfa09c336733237216b1b4b8b.svg)
+![](/assets/Images/Infrastructure%20as%20Code/248f6eebfa09c336733237216b1b4b8b.svg)
 
 
 **Continual (Best Practice) Phases**:
@@ -203,7 +203,7 @@ config.vm.provision "ansible_local" do |ansible|
     ansible.become = true
 end
 ```
-![](assets/Images/Infrastructure%20as%20Code/Screenshot%202024-12-10%20at%203.21.15%20PM.png)
+![](/assets/Images/Infrastructure%20as%20Code/Screenshot%202024-12-10%20at%203.21.15%20PM.png)
 
 
 #### On-Premises Code Final Challenge

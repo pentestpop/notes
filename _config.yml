@@ -81,6 +81,33 @@ defaults:
       type: pages
     values:
       layout: default
+  - scope:
+      path: "Reconnaissance"
+    values:
+      render_with_liquid: false
+  - scope:
+      path: "Service_Enumeration"
+    values:
+      render_with_liquid: false
+  - scope:
+      path: "Web_Application"
+    values:
+      render_with_liquid: false
+  - scope:
+      path: "Post_Exploitation"
+    values:
+      render_with_liquid: false
+  - scope:
+      path: "Active_Directory"
+    values:
+      render_with_liquid: false
+  - scope:
+      path: "Reference"
+    values:
+      render_with_liquid: false
+  - scope:
+      path: "Defensive_Security"
+    values:
       render_with_liquid: false
 
 kramdown:

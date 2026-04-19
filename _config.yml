@@ -66,6 +66,7 @@ exclude:
   - just-the-docs/
   - add_front_matter.py
   - audit_assets.py
+  - sync_obsidian.py
   - .sass-cache/
   - .jekyll-cache/
   - Gemfile

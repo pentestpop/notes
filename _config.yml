@@ -84,31 +84,27 @@ defaults:
     values:
       layout: default
   - scope:
-      path: "Reconnaissance"
+      path: "1 - Enumeration"
     values:
       render_with_liquid: false
   - scope:
-      path: "Service_Enumeration"
+      path: "2 - Exploit"
     values:
       render_with_liquid: false
   - scope:
-      path: "Web_Application"
+      path: "3 - Post-Exploit"
     values:
       render_with_liquid: false
   - scope:
-      path: "Post_Exploitation"
+      path: "4 - Web_Application"
     values:
       render_with_liquid: false
   - scope:
-      path: "Active_Directory"
+      path: "5 - Unsorted Security"
     values:
       render_with_liquid: false
   - scope:
-      path: "Reference"
-    values:
-      render_with_liquid: false
-  - scope:
-      path: "Defensive_Security"
+      path: "6 - Misc THM Notes"
     values:
       render_with_liquid: false
 

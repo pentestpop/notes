@@ -5,6 +5,8 @@ url: "https://notes.chrisgrigsby.com"
 
 remote_theme: just-the-docs/just-the-docs
 
+logo: "/assets/images/logo.jpg"
+
 color_scheme: security
 
 permalink: pretty

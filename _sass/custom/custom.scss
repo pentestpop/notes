@@ -83,6 +83,17 @@
   );
 }
 
+// --- Sidebar width cap for large/4K screens ---
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 18rem !important;
+    max-width: 18rem !important;
+  }
+  .main {
+    margin-left: 18rem !important;
+  }
+}
+
 // --- Code block styling ---
 .highlight,
 pre.highlight {
